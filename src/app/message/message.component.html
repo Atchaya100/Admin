@@ -1,0 +1,21 @@
+<form #formRef="ngForm" (ngSubmit)="Post(formRef.value)" class="form-group">
+<h4>Post a message</h4><br>  
+<textarea  [(ngModel)]="post" id="post" name="msg" ></textarea><br>
+<button class="btn btn-info">Post</button>
+</form>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Post_id</th>
+        <th>Posts</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of msg">
+        <td>{{i.msg_id}}</td>
+        <td>{{i.msg}}</td>
+        <td><button class="btn btn-danger" (click)="delete(i.msg_id)">Delete</button></td>
+    </tr>
+    </tbody>
+   </table>

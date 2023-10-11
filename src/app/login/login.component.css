@@ -1,0 +1,10 @@
+#login{
+    margin:0 auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    height:200px;
+    width:300px;
+    padding:30px;
+    color: black;
+    margin-top:150px;
+}

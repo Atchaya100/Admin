@@ -1,0 +1,17 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+#dboard{
+    color:black;
+    font-size: 16px;
+}
+table,th{
+   margin-left: auto;
+   margin-right: auto;
+   width:60%;
+}
+#center{
+    text-align: center;
+}
+#msg{
+    display: grid;
+   margin:auto;
+}

@@ -1,0 +1,22 @@
+<div id="dboard">
+<h3 id="center">Dashboard</h3><br>
+<br>
+   <button id="msg" routerLink="/messages" class="btn btn-success">Messages</button><br><br>
+   <table class="table table-striped">
+    <thead>
+    <tr>
+        <th>User_id</th>
+        <th>Users</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of user">
+        <td>{{i.user_id}}</td>
+        <td>{{i.username}}</td>
+        <td><button class="btn btn-danger" (click)="delete(i.user_id)">Delete</button></td>
+    </tr>
+    </tbody>
+   </table>
+
+</div>
